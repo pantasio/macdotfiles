@@ -14,12 +14,12 @@ case '*Linux'
     :
 end
 
-alias cl=clear
-alias v=$EDITOR
-alias la='ls -lha'
-alias df='df -h'
-alias du='du -ch'
-alias ipp='dig -4 +short myip.opendns.com @resolver1.opendns.com'
+#############################
+# Change default shell
+alias tobash="chsh -s /bin/bash && echo 'Now log out.'"
+alias tozsh="chsh -s /bin/zsh && echo 'Now log out.'"
+alias tofish="chsh -s /usr/local/bin/fish && echo 'Now log out.'"
+
 #alias yh='youtube-dl --continue --no-check-certificate --format=bestvideo+bestaudio[ext=m4a]/best --merge-output-format=mp4'
 #alias yd='youtube-dl --continue --no-check-certificate --format=bestvideo+bestaudio --exec="ffmpeg -i {} -c:v dnxhd -profile:v dnxhr_hq -vf fps=25/1,format=yuv422p -c:a pcm_s16le {}.mov && rm {}"'
 #alias ya='youtube-dl --continue --no-check-certificate --format=bestaudio -x --audio-format wav'
@@ -30,12 +30,9 @@ alias ipp='dig -4 +short myip.opendns.com @resolver1.opendns.com'
 
 # Load Git alias
 source $HOME/.config/fish/alias/git.fish
+source $HOME/.config/fish/alias/mics.fish
 
 
-# Edit fish config
-alias ef='vim ~/.config/fish/config.fish'
-# Reload fish
-alias rf='exec fish'
 
 # Blog commands
 #alias generate='rm -f dst/.files && ssg5 src dst "Wolfgang\'s Blog" "http://notthebe.ee"'
