@@ -1,0 +1,330 @@
+{
+  // Common Settings
+  "files.autoSave": "onFocusChange",
+  "editor.wordWrap": "on",
+  "editor.lineHeight": 24,
+  "editor.cursorWidth": 2,
+  "explorer.confirmDelete": false,
+  "editor.minimap.renderCharacters": false,
+  "editor.fontFamily": "'CaskaydiaCove Nerd Font', Consolas, 'Courier New', monospace",
+  "editor.fontSize": 14,
+  "terminal.integrated.lineHeight": 1.2,
+  "terminal.integrated.fontFamily": "'CaskaydiaCove Nerd Font Mono', Consolas, 'Courier New', monospace",
+  // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+  // @sync os=mac
+  // VScode Terminal settings
+  // "terminal.integrated.fontFamily": "'FiraCode Nerd Font Mono', Consolas, 'Courier New', monospace",
+  // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+  // @sync os=windows
+  // 
+  // VScode Terminal settings
+  // "terminal.integrated.fontFamily": "CaskaydiaCove NF",
+  // "terminal.integrated.defaultProfile.windows": "PowerShell",
+  // "terminalCursor.background": "#A89984",
+  "editor.fontLigatures": true,
+  "sync.gist": "b9e278ec67f02af324aa21b395e885f3",
+  "sync.autoUpload": true,
+  "sync.autoDownload": true,
+  "workbench.preferredDarkColorTheme": "Solarized Dark",
+  "workbench.preferredHighContrastColorTheme": "Solarized Dark",
+  "workbench.preferredLightColorTheme": "Solarized Dark",
+  "workbench.iconTheme": "material-icon-theme",
+  "sync.quietSync": true,
+  "json.maxItemsComputed": 50000,
+  "liveServer.settings.donotShowInfoMsg": true,
+  // Better commend setting
+  "better-comments.multilineComments": true,
+  "better-comments.highlightPlainText": false,
+  "better-comments.tags": [
+    {
+      "tag": "!",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "?",
+      "color": "#3498DB",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "//",
+      "color": "#474747",
+      "strikethrough": true,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "todo",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "*",
+      "color": "#98C379",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    }
+  ],
+  /**
+    * Vim settings
+    **/
+  "vim.leader": "<space>",
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  // Use systemclipboard to copy outside VScode
+  "vim.useSystemClipboard": true,
+  "vim.hlsearch": true,
+  // insert mode -> normal mode
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "editor.lineNumbers": "relative",
+  /* ================================ 
+        Shopify Liquid Template Snippets setting
+       ================================ */
+  "emmet.includeLanguages": {
+    "liquid": "html"
+  },
+  /* ================================ 
+                In Visual mode
+       ================================ */
+  // in visual mode, press v and selete many row
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        ">"
+      ],
+      "commands": [
+        "editor.action.indentLines"
+      ]
+    },
+    {
+      "before": [
+        "<"
+      ],
+      "commands": [
+        "editor.action.outdentLines"
+      ]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    // In visual mode iI aA oO goes to insert mode
+    // This setting for mistake some unknow key press.
+    {
+      "before": [
+        "i"
+      ],
+      "after": [
+        "<Esc>",
+        "i"
+      ]
+    },
+    {
+      "before": [
+        "I"
+      ],
+      "after": [
+        "<Esc>",
+        "I"
+      ]
+    },
+    {
+      "before": [
+        "a"
+      ],
+      "after": [
+        "<Esc>",
+        "a"
+      ]
+    },
+    {
+      "before": [
+        "A"
+      ],
+      "after": [
+        "<Esc>",
+        "A"
+      ]
+    },
+    {
+      "before": [
+        "o"
+      ],
+      "after": [
+        "<Esc>",
+        "o"
+      ]
+    },
+    {
+      "before": [
+        "O"
+      ],
+      "after": [
+        "<Esc>",
+        "O"
+      ]
+    }
+  ],
+  // Bind ( to 'i(' in operator pending mode makes 'y(' and 'c(' work like 'yi(' and 'ci(' respectively.
+  "vim.operatorPendingModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "("
+      ],
+      "after": [
+        "i("
+      ]
+    }
+  ],
+  // Split panel
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<leader>",
+        "w"
+      ],
+      "commands": [
+        "workbench.action.splitEditor"
+      ]
+    }
+  ],
+  // Setting color theme
+  "workbench.colorTheme": "pantasio",
+  // Setting programming language
+  "redhat.telemetry.enabled": false,
+  "remote.SSH.remotePlatform": {
+    "aws-blog": "linux"
+  },
+  // ssh remote setting
+  "remote.SSH.defaultForwardedPorts": [],
+  "editor.formatOnSave": true,
+  "dart.flutterSdkPath": "/Users/pantasio/tools/flutter",
+  "terminal.integrated.cursorStyle": "line",
+  "editor.cursorBlinking": "phase",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.defaultProfile.linux": "fish",
+  "terminal.integrated.fontSize": 14,
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [
+      80
+    ],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": false
+  },
+  "terminal.integrated.defaultProfile.osx": "fish",
+  "bracketPairColorizer.depreciation-notice": false,
+  "bracket-pair-colorizer-2.depreciation-notice": false,
+  "terminal.external.osxExec": "Alacritty.app"
+  /* Evondev settings.jsona
+    "editor.fontFamily": "SF Mono, Source Code Pro, Input Mono, Inconsolata,  Arial, Helvetica, sans-serif",
+    "editor.wordWrap": "on",
+    "editor.lineHeight": 30,
+    "files.trimTrailingWhitespace": true,
+    "editor.cursorWidth": 3,
+    "explorer.confirmDelete": false,
+    "editor.minimap.renderCharacters": false,
+    "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "vue-html": "html"
+    },
+    "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "gitlens.advanced.messages": {
+    "suppressLineUncommittedWarning": true
+    },
+    "terminal.integrated.rendererType": "dom",
+    "debug.console.fontSize": 14,
+    "explorer.confirmDragAndDrop": false,
+    "files.autoSaveDelay": 5000,
+    "editor.renderLineHighlight": "none",
+    "editor.fontLigatures": true,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.donotVerifyTags": true,
+    "eslint.alwaysShowStatus": true,
+    "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "emmet.triggerExpansionOnTab": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "editor.wordWrapColumn": 100,
+    "color-highlight.markerType": "underline",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.letterSpacing": 0.6,
+    "window.zoomLevel": 1.5,
+    "powermode.enabled": true,
+    "powermode.enableShake": false,
+    "powermode.enableStatusBarComboTimer": false,
+    "powermode.enableStatusBarComboCounter": false,
+    "powermode.explosionOffset": 0.2,
+    "powermode.explosionSize": 3.5,
+    "editor.fontSize": 13,
+    "workbench.editor.untitled.hint": "hidden",
+    "terminal.integrated.fontSize": 13,
+    "workbench.colorTheme": "Dracula high contrast",
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.fontAliasing": "auto",
+    "editor.cursorBlinking": "solid"
+     
+    */
+  /*"workbench.colorCustomizations": {
+    "terminal.background":"#1D2021",
+    "terminal.foreground":"#A89984",
+    "terminalCursor.background":"#A89984",
+    "terminalCursor.foreground":"#A89984",
+    "terminal.ansiBlack":"#1D2021",
+    "terminal.ansiBlue":"#0D6678",
+    "terminal.ansiBrightBlack":"#665C54",
+    "terminal.ansiBrightBlue":"#0D6678",
+    "terminal.ansiBrightCyan":"#8BA59B",
+    "terminal.ansiBrightGreen":"#95C085",
+    "terminal.ansiBrightMagenta":"#8F4673",
+    "terminal.ansiBrightRed":"#FB543F",
+    "terminal.ansiBrightWhite":"#FDF4C1",
+    "terminal.ansiBrightYellow":"#FAC03B",
+    "terminal.ansiCyan":"#8BA59B",
+    "terminal.ansiGreen":"#95C085",
+    "terminal.ansiMagenta":"#8F4673",
+    "terminal.ansiRed":"#FB543F",
+    "terminal.ansiWhite":"#A89984",
+    "terminal.ansiYellow":"#FAC03B"
+    }
+    */
+}
